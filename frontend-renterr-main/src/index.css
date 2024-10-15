@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/public/assets/fonts/Inter.ttf");
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt"0;
+}
+
+.bg-signup {
+    background-image: url("/public/assets/images/Building.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bg-gradient-signup {
+    background-image: linear-gradient(180deg, #57B9E3 0%, rgba(87, 185, 227, 0) 100%);
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #400cfa;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:1024px) {
+    :root {
+        font-size: 13px;
+    }
+}
